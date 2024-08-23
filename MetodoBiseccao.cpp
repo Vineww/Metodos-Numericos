@@ -53,5 +53,5 @@ cout << fixed << setprecision(5);
 cout << "raiz por | Xn - a |: " << raiz << "\n";
 
 return 0;
-
+    
 }
