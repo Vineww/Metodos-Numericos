@@ -4,15 +4,15 @@
 
 using namespace std;
 
-double calculaFx(double x){
+float calculaFx(float x){
 
     return x * log(3*x - 1);
 
 }
 
-double achaRz(double a, double b, double erro){
+float achaRz(float a, float b, float erro){
     
-    double xn, 
+    float  xn, 
            fa, 
            fx;
 
@@ -43,15 +43,22 @@ double achaRz(double a, double b, double erro){
 
 int main(){
 
-double erro  = 0.01,
-       a    = 0.4000,
-       b    = 1.0000;
+float erro   = 0.0,
+       a     = 0.0,
+       b     = 0.0;
 
-double raiz = achaRz(a, b, erro);
+cout << "Entre com A: ";
+cin >> a;
+cout << "Entre com B: ";
+cin >> b;
+cout << "Entre com o erro: ";
+cin >> erro;
 
-cout << fixed << setprecision(5);
+float raiz = achaRz(a, b, erro);
+
+cout << fixed << setprecision(4);
 cout << "raiz por | Xn - a |: " << raiz << "\n";
 
 return 0;
-    
+
 }
