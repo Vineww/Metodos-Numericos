@@ -43,11 +43,11 @@ double achaRz(double a, double b, double erro){
 
 int main(){
 
-float erro  = 0.01,
+double erro  = 0.01,
        a    = 0.4000,
        b    = 1.0000;
 
-float raiz = achaRz(a, b, erro);
+double raiz = achaRz(a, b, erro);
 
 cout << fixed << setprecision(5);
 cout << "raiz por | Xn - a |: " << raiz << "\n";
