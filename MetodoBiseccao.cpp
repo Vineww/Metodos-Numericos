@@ -21,7 +21,7 @@ float achaRz(float a, float b, float erro){
     fa = calculaFx(a);
     fx = calculaFx(xn);
 
-    if (fabs(b - a) < erro){
+    if (fabs(xn - a) < erro){
         
         return xn;
 
